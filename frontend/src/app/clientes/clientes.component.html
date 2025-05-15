@@ -1,0 +1,45 @@
+<table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Genero</th>
+        <th>Edad</th>
+        <th>Identificacion</th>
+        <th>Direccion</th>
+        <th>Telefono</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      <ng-container *ngFor="let cliente of clientes; let i = index">
+        <tr>
+          <td>{{ cliente.clienteId }}</td>
+          <td>{{ cliente.nombre }}</td>
+          <td>{{ cliente.genero }}</td>
+          <td>{{ cliente.edad }}</td>
+          <td>{{ cliente.identificacion }}</td>
+          <td>{{ cliente.direccion }}</td>
+          <td>{{ cliente.telefono }}</td>
+          <td>
+            <button (click)="toggleCuentas(i, cliente.clienteId)">
+              {{ expandedIndex === i ? 'Ocultar Estado de cuenta' : 'Mostrar Estado de cuenta' }}
+            </button>
+          </td>
+        </tr>
+        <tr *ngIf="expandedIndex === i">
+          <td colspan="8">
+            <ul *ngIf="cuentasCliente.length > 0; else noCuentas">
+                <li *ngFor="let cuenta of cuentasCliente">
+                  Número: {{ cuenta.numeroCuenta }}, Tipo: {{ cuenta.tipoCuenta }}, Saldo: {{ cuenta.saldo | currency }}
+                </li>
+              </ul>
+            <ng-template #noCuentas>
+              <p>No hay cuentas para este cliente.</p>
+            </ng-template>
+          </td>
+        </tr>
+      </ng-container>
+    </tbody>
+  </table>
+  

@@ -45,17 +45,20 @@ services:
     networks:
       - backend
 
-  # frontend:
-  #   build:
-  #     context: ./frontend
-  #   container_name: angular-app
-  #   ports:
-  #     - "4200:80"
-  #   depends_on:
-  #     - client-person-service
-  #     - account-transaction-service
-  #   networks:
-  #     - backend
+  frontend:
+    build:
+      context: ./frontend
+    container_name: angular-app
+    ports:
+      - "4200:4200"
+    depends_on:
+      - client-person-service
+      - account-transaction-service
+    networks:
+      - backend
+
+
+
 
 volumes:
   postgres_data:

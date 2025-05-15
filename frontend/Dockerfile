@@ -1,16 +1,13 @@
-# Etapa de build
-FROM node:18-alpine as build
+FROM node:18-alpine
 
 WORKDIR /app
-COPY . .
+
+COPY package*.json ./
+
 RUN npm install
-RUN npm run build --prod
 
-# Etapa de producción con nginx
-FROM nginx:alpine
-COPY --from=build /app/dist/<nombre-proyecto-angular> /usr/share/nginx/html
+COPY . .
 
-# Copia configuración personalizada de nginx si la tienes
-# COPY nginx.conf /etc/nginx/nginx.conf
+EXPOSE 4200
 
-EXPOSE 80
+CMD ["npm", "start"]

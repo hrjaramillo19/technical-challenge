@@ -70,3 +70,44 @@ npm-debug.log
 yarn-debug.log
 yarn-error.log
 
+
+
+# Node modules
+/node_modules/
+
+# Angular build output
+/dist/
+/out-tsc/
+
+# IDE/editor config files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.jsproj
+*.tsbuildinfo
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment files
+/src/environments/*.local.ts
+/src/environments/*.local.*
+
+# Compiled output
+/*.js
+/*.js.map
+/*.d.ts
+
+# Temporary folders
+/.angular/cache
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Others
+coverage/

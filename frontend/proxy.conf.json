@@ -1,0 +1,12 @@
+{
+    "/clientes": {
+      "target": "http://localhost:8080",
+      "changeOrigin": true,
+      "secure": false
+    },
+    "/reportes": {
+      "target": "http://localhost:8081",
+      "changeOrigin": true,
+      "secure": false
+    }
+  }
