@@ -56,7 +56,7 @@ Todos los servicios están conectados mediante la red Docker `backend` y los ser
 mvn clean install
 ```
 
-6. Ejecuta el siguiente comando para levantar todos los servicios (base de datos, backend y frontend):
+4. Ejecuta el siguiente comando para levantar todos los servicios (base de datos, backend y frontend):
 
    ```bash
    docker compose -f docker-compose.yml up  --build
