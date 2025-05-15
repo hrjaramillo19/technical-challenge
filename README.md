@@ -50,7 +50,13 @@ Todos los servicios están conectados mediante la red Docker `backend` y los ser
 
 2. Asegúrate que Docker y Docker Compose estén corriendo.
 
-3. Ejecuta el siguiente comando para levantar todos los servicios (base de datos, backend y frontend):
+3. Asegurarse que estan compilados los dos microservicios
+
+```bash
+mvn clean install
+```
+
+6. Ejecuta el siguiente comando para levantar todos los servicios (base de datos, backend y frontend):
 
    ```bash
    docker compose -f docker-compose.yml up  --build
