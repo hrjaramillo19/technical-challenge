@@ -20,8 +20,8 @@ export interface Cliente {
 })
 export class ClienteService {
 
-  private apiUrlCliente = 'http://localhost:8080/api/clientes';
-  private apiUrlReporte = 'http://localhost:8081/api/reportes?fecha=2025-01-01,2025-05-30&';
+  private apiUrlCliente = 'http://client-person-service:8080/api/clientes';
+  private apiUrlReporte = 'http://account-transaction-service:8081/api/reportes?fecha=2025-01-01,2025-05-30&';
 
   constructor(private http: HttpClient) { }
 

@@ -73,7 +73,7 @@ yarn-error.log
 
 
 # Node modules
-/node_modules/
+*/node_modules/
 
 # Angular build output
 /dist/
@@ -103,7 +103,7 @@ yarn-error.log*
 /*.d.ts
 
 # Temporary folders
-/.angular/cache
+*/.angular/cache
 
 # System files
 .DS_Store
