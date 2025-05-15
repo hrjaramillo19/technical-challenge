@@ -40,7 +40,7 @@ Todos los servicios están conectados mediante la red Docker `backend` y los ser
 ## Archivos importantes
 
 - **base_de_datos.sql**: Script para crear y poblar la base de datos PostgreSQL usada por la aplicación.  
-- **postman_collection.json**: Archivo JSON con la colección de Postman para probar los endpoints del backend.  
+- **technical-challenge.postman_collection.json**: Archivo JSON con la colección de Postman para probar los endpoints del backend.  
 
 ---
 
