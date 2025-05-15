@@ -1,0 +1,64 @@
+version: '3.8'
+services:
+
+  postgres:
+    image: postgres:14
+    container_name: postgres
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: mydb
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - backend
+
+  client-person-service:
+    build:
+      context: ./backend/client-person-service
+    container_name: client-person-service
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgres
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/mydb
+      SPRING_DATASOURCE_USERNAME: user
+      SPRING_DATASOURCE_PASSWORD: password
+    networks:
+      - backend
+
+  account-transaction-service:
+    build:
+      context: ./backend/account-transaction-service
+    container_name: account-transaction-service
+    ports:
+      - "8081:8080"
+    depends_on:
+      - postgres
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/mydb
+      SPRING_DATASOURCE_USERNAME: user
+      SPRING_DATASOURCE_PASSWORD: password
+    networks:
+      - backend
+
+  # frontend:
+  #   build:
+  #     context: ./frontend
+  #   container_name: angular-app
+  #   ports:
+  #     - "4200:80"
+  #   depends_on:
+  #     - client-person-service
+  #     - account-transaction-service
+  #   networks:
+  #     - backend
+
+volumes:
+  postgres_data:
+
+networks:
+  backend:

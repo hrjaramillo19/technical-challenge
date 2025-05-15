@@ -1,0 +1,72 @@
+### Java ###
+*.class
+*.jar
+*.war
+*.ear
+
+### Logs ###
+*.log
+
+### Directories ###
+/target/
+/build/
+/out/
+
+### IntelliJ IDEA ###
+.idea/
+/*.iml
+*.iws
+*.ipr
+
+### Eclipse ###
+.project
+.classpath
+.c9/
+.settings/
+
+### VS Code ###
+.vscode/
+
+### OS-specific ###
+.DS_Store
+Thumbs.db
+
+### Environment ###
+.env
+*.env
+
+### Maven ###
+/.mvn/
+!**/src/main/resources/**/application*.yml
+!**/src/main/resources/**/application*.properties
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+
+### Gradle (si aplica) ###
+.gradle/
+/build/
+gradle-app.setting
+gradle-wrapper.jar
+gradlew.bat
+
+### Test coverage and reports ###
+/coverage/
+/jacoco.exec
+
+### Docker ###
+*.pid
+*.tar
+*.gz
+docker-compose.override.yml
+.env
+
+### Others ###
+/node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+

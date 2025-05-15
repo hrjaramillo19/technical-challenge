@@ -1,0 +1,8 @@
+/Users/hrjaramillo/Documents/consejo-judicatura/technical-challenge/backend/client-person-service/src/main/java/com/technical/challenge/client_person_service/ClientPersonServiceApplication.java
+/Users/hrjaramillo/Documents/consejo-judicatura/technical-challenge/backend/client-person-service/src/main/java/com/technical/challenge/client_person_service/controller/ClienteController.java
+/Users/hrjaramillo/Documents/consejo-judicatura/technical-challenge/backend/client-person-service/src/main/java/com/technical/challenge/client_person_service/entity/Cliente.java
+/Users/hrjaramillo/Documents/consejo-judicatura/technical-challenge/backend/client-person-service/src/main/java/com/technical/challenge/client_person_service/entity/Persona.java
+/Users/hrjaramillo/Documents/consejo-judicatura/technical-challenge/backend/client-person-service/src/main/java/com/technical/challenge/client_person_service/exception/BusinessException.java
+/Users/hrjaramillo/Documents/consejo-judicatura/technical-challenge/backend/client-person-service/src/main/java/com/technical/challenge/client_person_service/exception/GlobalExceptionHandler.java
+/Users/hrjaramillo/Documents/consejo-judicatura/technical-challenge/backend/client-person-service/src/main/java/com/technical/challenge/client_person_service/repository/ClienteRepository.java
+/Users/hrjaramillo/Documents/consejo-judicatura/technical-challenge/backend/client-person-service/src/main/java/com/technical/challenge/client_person_service/service/ClienteService.java

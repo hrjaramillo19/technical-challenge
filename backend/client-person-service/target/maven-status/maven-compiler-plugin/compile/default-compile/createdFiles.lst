@@ -1,0 +1,8 @@
+com/technical/challenge/client_person_service/repository/ClienteRepository.class
+com/technical/challenge/client_person_service/exception/GlobalExceptionHandler.class
+com/technical/challenge/client_person_service/controller/ClienteController.class
+com/technical/challenge/client_person_service/entity/Cliente.class
+com/technical/challenge/client_person_service/entity/Persona.class
+com/technical/challenge/client_person_service/ClientPersonServiceApplication.class
+com/technical/challenge/client_person_service/service/ClienteService.class
+com/technical/challenge/client_person_service/exception/BusinessException.class
